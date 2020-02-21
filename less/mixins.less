@@ -1,20 +1,36 @@
 // Mixins Here
 
-.btnSignUp {
-    border-radius: 12px;
-    background-color: @btn-bg-color;
-    font-size: medium;
-    color: white;
-    width: 120px;
-    text-align: center;
-    padding: 15px;
-}
-
-
+// .btnSignUp {
+//     border-radius: 12px;
+//     background-color: @btn-bg-color;
+//     font-size: medium;
+//     color: white;
+//     width: 120px;
+//     text-align: center;
+//     padding: 15px;
+// }
 
 .center() {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: @wild-sand;
+}
+
+.custom-btn(@btn-bg-color: #22283A, @width: 120px, @font-color: white) {
+    display: block;
+    background-color: @btn-bg-color;
+    // margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    font-size: 2rem;
+    border-radius: 12px;
+    color: @font-color;
+    text-align: center;
+    padding: 15px;
+
+    &:hover {
+        background-color: @font-color;
+        color: @btn-bg-color;
+    }
 }
