@@ -1,1 +1,21 @@
 // Mixins Here
+
+.btnSignUp {
+    border-radius: 12px;
+    background-color: @btn-bg-color;
+    font-size: medium;
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn {
+    .btnSignUp();
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

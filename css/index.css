@@ -1,3 +1,21 @@
+.btnSignUp {
+  border-radius: 12px;
+  background-color: #22283A;
+  font-size: medium;
+  color: white;
+  width: 120px;
+  text-align: center;
+  padding: 15px;
+}
+.btn {
+  border-radius: 12px;
+  background-color: #22283A;
+  font-size: medium;
+  color: white;
+  width: 120px;
+  text-align: center;
+  padding: 15px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,16 +180,19 @@ p {
 }
 .headernav {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 600px;
+  background-color: #F6F6F6;
 }
 nav {
   display: flex;
-  margin: 20px 0;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0;
+  font-family: #454A59;
+  font-size: 2em;
 }
 nav a {
   text-decoration: none;
